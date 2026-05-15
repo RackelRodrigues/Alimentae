@@ -1,0 +1,41 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@100..900&display=swap");
+
+:root {
+  /* primary colors */
+  --color-primary: #5252ed;
+  --color-accent: #e87c53;
+
+  /* background colors */
+  --color-background: #000000;
+  --color-background-secondary: #111111;
+  --color-hero: #efe7da;
+
+  /* text colors */
+  --color-white: #ffffff;
+  --color-text: #ffffff;
+  --color-text-secondary: #b4b4b4;
+  --color-text-muted: #7a7a7a;
+  --color-text-black: #000000;
+
+  /* border */
+  --color-border: rgba(255, 255, 255, 0.08);
+
+  /* hover */
+  --color-primary-hover: #4343d8;
+  --color-accent-hover: #d96c42;
+
+  /* shadows */
+  --shadow-primary: 0 10px 30px rgba(82, 82, 237, 0.25);
+  --shadow-accent: 0 10px 30px rgba(232, 124, 83, 0.25);
+
+  /* fonts */
+  --font-primary: "Inter", sans-serif;
+  --font-hiro: "Fredoka One", cursive;
+
+  /* sizes */
+  --container-width: 1280px;
+
+  /* transition */
+  --transition-default: 0.3s ease;
+}
