@@ -11,15 +11,20 @@ const attrs = useAttrs();
 <style scoped>
 .input {
   width: 100%;
-  height: 54px;
+  /* height: 100%; */
+  height: 2.5rem;
 
-  padding-inline: 1rem;
+  padding: 1rem;
 
-  border-radius: 14px;
+  border-radius: 0.2rem;
 
-  background: #111;
-  border: 1px solid #222;
-
+  background: transparent;
+  /* border: 1px solid #222; */
+  border: 1px solid var(--color-text-secondary);
   color: white;
 }
+
+/* .input::placeholder {
+  color: var(--color-placeholder);
+} */
 </style>

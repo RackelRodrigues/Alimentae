@@ -16,12 +16,12 @@ import { User, LogIn } from "lucide-vue-next";
       </ul>
     </nav>
 
-    <div>
+    <div class="container-buttons">
       <Button variant="primary">
         <User />
         Criar Conta</Button
       >
-      <Button variant="secondary">
+      <Button variant="terciary">
         <LogIn />
         Login
       </Button>
@@ -31,14 +31,20 @@ import { User, LogIn } from "lucide-vue-next";
 
 <style lang="css" scoped>
 .header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
 
-  padding: 1rem 2rem;
-}
+  padding: 0.8rem 1.2rem;
 
+  img {
+    justify-self: start;
+    width: 3rem;
+    border-radius: 0.2rem;
+  }
+}
 .nav {
+  justify-self: center;
   ul {
     display: flex;
     list-style: none;
@@ -46,12 +52,47 @@ import { User, LogIn } from "lucide-vue-next";
   }
 
   a {
+    position: relative;
+
     text-decoration: none;
     color: var(--color-text-black);
+
     font-family: var(--font-primary);
     font-weight: 300;
-    font-size: 1.1;
-    cursor: pointer;
+    font-size: 1.1rem;
+
+    transition: 0.2s ease;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+
+      width: 0%;
+      height: 2px;
+
+      border-radius: 999px;
+
+      background: var(--color-accent);
+
+      transition: width 0.3s ease;
+    }
+
+    &:hover {
+      color: var(--color-accent);
+
+      transform: translateY(-2px);
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
   }
+}
+.container-buttons {
+  display: flex;
+  gap: 0.5rem;
 }
 </style>
