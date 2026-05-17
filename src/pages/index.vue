@@ -3,6 +3,7 @@ import foodCategories from "../components/landing/foodCategories.vue";
 import headerSection from "../components/landing/headerSection.vue";
 import heroSection from "../components/landing/heroSection.vue";
 import PartnerSection from "../components/landing/PartnerSection.vue";
+import Footer from "../components/ui/footer.vue";
 </script>
 
 <template>
@@ -10,4 +11,6 @@ import PartnerSection from "../components/landing/PartnerSection.vue";
   <heroSection />
   <foodCategories />
   <PartnerSection />
+
+  <Footer />
 </template>

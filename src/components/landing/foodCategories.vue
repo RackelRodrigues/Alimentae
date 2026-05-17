@@ -11,6 +11,7 @@ import {
   DrumstickIcon as Drumstick,
   CupSodaIcon as CupSoda,
 } from "lucide-vue-next";
+import card from "../ui/card.vue";
 
 const foodCategories = [
   {
@@ -78,7 +79,62 @@ const foodCategories = [
     </div>
   </div>
 
-  <div class="foods">outras comidas aqui</div>
+  <div class="foods">
+    <h1 class="title-popular">Mais popular</h1>
+    <div class="foods-grid">
+      <card
+        photo="/src/assets/images/logo.svg"
+        title="Pizza Margherita"
+        :price="12.99"
+        store="Pizzaria Bella"
+      /><card
+        photo="/src/assets/images/logo.svg"
+        title="Pizza Margherita"
+        :price="12.99"
+        store="Pizzaria Bella"
+      /><card
+        photo="/src/assets/images/logo.svg"
+        title="Pizza Margherita"
+        :price="12.99"
+        store="Pizzaria Bella"
+      /><card
+        photo="/src/assets/images/logo.svg"
+        title="Pizza Margherita"
+        :price="12.99"
+        store="Pizzaria Bella"
+      /><card
+        photo="/src/assets/images/logo.svg"
+        title="Pizza Margherita"
+        :price="12.99"
+        store="Pizzaria Bella"
+      /><card
+        photo="/src/assets/images/logo.svg"
+        title="Pizza Margherita"
+        :price="12.99"
+        store="Pizzaria Bella"
+      /><card
+        photo="/src/assets/images/logo.svg"
+        title="Pizza Margherita"
+        :price="12.99"
+        store="Pizzaria Bella"
+      /><card
+        photo="/src/assets/images/logo.svg"
+        title="Pizza Margherita"
+        :price="12.99"
+        store="Pizzaria Bella"
+      /><card
+        photo="/src/assets/images/logo.svg"
+        title="Pizza Margherita"
+        :price="12.99"
+        store="Pizzaria Bella"
+      /><card
+        photo="/src/assets/images/logo.svg"
+        title="Pizza Margherita"
+        :price="12.99"
+        store="Pizzaria Bella"
+      />
+    </div>
+  </div>
 </template>
 
 <style lang="css" scoped>
@@ -144,8 +200,23 @@ const foodCategories = [
   color: var(--color-white);
 }
 
-.foods {
+.title-popular {
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-text-black);
   text-align: center;
-  height: 50vh;
+  margin: 1rem 0;
+}
+
+.foods {
+  margin: 2rem 0;
+}
+
+.foods-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 290px));
+  justify-content: center;
+  gap: 5rem;
 }
 </style>
